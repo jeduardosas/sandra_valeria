@@ -1,0 +1,38 @@
+.timeline{
+  margin-top: 100px;
+  width: 100%;
+}
+.timeline-title-cont{
+  text-align: center;
+  font-size: 45px;
+  font-family: var(--cursiva);
+  color: var(--color_detalles);
+
+}
+
+.custom-date-color{
+  color:#4b541f !important;
+  margin-left: 10px;
+  padding: 10px 0 !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+@media (max-width: 768px) {
+  .timeline{
+    width: 90%;
+  }
+  .custom-date-color{
+    color:#fff;
+  }
+  
+}
+
+.timeline-title{
+  text-transform: uppercase;
+}
+
+.custom-icon{
+    max-width: 100%;
+    height: auto;
+  }
+

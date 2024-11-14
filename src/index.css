@@ -1,0 +1,50 @@
+:root{
+  --fuentePrincipal:"Lora", serif;
+  --cursiva: "Rouge Script", cursive;
+  --color_principal:#748039;
+  --color_secundario:#b4b4b4;
+  --color_detalles: #bea77b;
+  --color_timeline:#c5cf92;
+  --back-color:#f4f2ec;
+  --grisSombra: #bdbdbd;
+}
+
+body{
+  height: 100vh; 
+  margin: 0;
+  background-color: var(--back-color);
+  font-family: var(--fuentePrincipal);
+  font-size: 20px;
+  color: var(--color_principal);
+  
+}
+
+h1,h2,h3,p{
+  margin: 0;
+}
+button{
+  border:none;
+}
+a{
+  text-decoration: none;
+}
+.centrar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sombra{
+  box-shadow: 10px 10px 10px var(--grisSombra);
+}
+
+.notfound{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notfound p{
+  font-size: 20px;
+}
