@@ -241,34 +241,26 @@ export const dataXV={
 
       {
         id:2,
-        time:'',
-        name:'',
-        icon:'',
+        time:'18:30',
+        name:'Recepcion',
+        icon:'recepcion',
         color:'',
         textColor:''
       },
 
       {
         id:3,
-        time:'',
-        name:'',
-        icon:'',
+        time:'21:00',
+        name:'Cena',
+        icon:'cutlery_white',
         color:'',
         textColor:''
       },
       {
         id:4,
-        time:'',
-        name:'',
-        icon:'',
-        color:'',
-        textColor:''
-      },
-      {
-        id:5,
-        time:'',
-        name:'',
-        icon:'',
+        time:'22:00 en adelante',
+        name:'Hasta Morir',
+        icon:'music_white',
         color:'',
         textColor:''
       },
