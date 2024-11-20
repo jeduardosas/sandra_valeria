@@ -196,7 +196,7 @@ export const dataBautizo={
 export const dataXV={
   nombre:'Sandra Valeria',
   nombre_papa:'Silviano Rojas Trejo',
-  nombre_mama:'Sandra María Chacon Herrera',
+  nombre_mama:'Sandra María Chacón Herrera',
   nombre_padrino:'Hector Hugo Pérez García',
   nombre_madrina:'Patricia Rangel García',
   frase:'Hay momentos en la vida que son especiales por si solos...Compartirlos con las personas que quieres los convierte en inolvidables.',
@@ -225,14 +225,14 @@ export const dataXV={
   regalos_url:'',
   time_line:{ 
     settings:{
-      bgColor:'',
+      bgColor:'#f1ede6',
       color:'',
-      lineColor:'#000'
+      lineColor:'#f1ede6'
     },
     protocol:[
       {
         id:1,
-        time:'17:00',
+        time:'17:00 Hrs.',
         name:'Ceremonia Religiosa',
         icon:'iglesia',
         color:'',
@@ -241,7 +241,7 @@ export const dataXV={
 
       {
         id:2,
-        time:'18:30',
+        time:'18:30 Hrs.',
         name:'Recepcion',
         icon:'recepcion',
         color:'',
@@ -250,7 +250,7 @@ export const dataXV={
 
       {
         id:3,
-        time:'21:00',
+        time:'21:00 Hrs.',
         name:'Cena',
         icon:'cutlery_white',
         color:'',
@@ -258,8 +258,8 @@ export const dataXV={
       },
       {
         id:4,
-        time:'22:00 en adelante',
-        name:'Hasta Morir',
+        time:'22:00 Hrs. en adelante',
+        name:'Todos a bailar',
         icon:'music_white',
         color:'',
         textColor:''
@@ -269,8 +269,8 @@ export const dataXV={
   hoteles:[
     {
       nombre:'Rinconada Hotel Boutique',
-      direccion:'Gral. Baltazar R. Leyva Manzilla, 19',
-      direccion_colonia:'centro, Iguala de la Independencia, Gro',
+      direccion:'Gral. Baltazar R. Leyva Manzilla, 19, Centro',
+      direccion_colonia:'Iguala de la Independencia, Gro',
       telefono:'7333332158',
       ubicacion:'https://maps.app.goo.gl/GK7ARLS9ESHJT2pa8'
     },
@@ -283,15 +283,15 @@ export const dataXV={
     },
     {
       nombre:'Hotel Real 1900',
-      direccion:'Miguel Hidalgo,6',
-      direccion_colonia:'Centro, Iguala de la Independencia, Gro.',
+      direccion:'Miguel Hidalgo, 6, Centro',
+      direccion_colonia:'Iguala de la Independencia, Gro.',
       telefono:'7331101106',
       ubicacion:'https://maps.app.goo.gl/bcRQiHRzWotJcCNe9'
     },
     {
       nombre:'Gran Plaza Hotel Centro Historico',
-      direccion:'Miguel Hidalgo, 7',
-      direccion_colonia:'Centro, Iguala de la Independencia, Gro.',
+      direccion:'Miguel Hidalgo, 7, Centro',
+      direccion_colonia:'Iguala de la Independencia, Gro.',
       ubicacion:'https://maps.app.goo.gl/KpSXNAmm8gdbRCeB6'
     }
   ]

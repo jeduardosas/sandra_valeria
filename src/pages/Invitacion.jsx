@@ -41,11 +41,12 @@ const {nombre} = dataXV;
 
 
 const Invitacion = () => {
-  const song = '/music/song1.mp3'
+  const song = '/music/song.mp3'
 
   //estado para manejar la reproduccion del audio
   const [play,setPlay] = useState(false);
   const [modalIsOpen, setModalIsopen] = useState(true);//estado para manejar el modal
+  const [ isPlaying, setIsPLaying] = useState(true); //estado para controlar si el audio se esta reproduciendo
   
   //VALIDACION DE LOS PARAMS DE LA URL
   const location = useLocation();
@@ -70,15 +71,25 @@ const Invitacion = () => {
     setModalIsopen(false)
   }
 
+  const handlePlayRepro = ()=>{
+    document.querySelector('audio').play();
+    setIsPLaying(true);
+  }
+
+  const handlePauseRepro = ()=>{
+    document.querySelector('audio').pause();
+    setIsPLaying(false);
+  }
+
   return (
     <div className="centrar">
 
       <div className="img-fondo">
-        <img loading="lazy" className="img-fondo-1" src="/img/img-1.png" alt="iimg-fondo" />
-        <img loading="lazy" className="img-fondo-2" src="/img/img-2.png" alt="iimg-fondo" />
+        <img loading="lazy" className="img-fondo-1" src="/img/flor1.webp" alt="iimg-fondo" />
+        <img loading="lazy" className="img-fondo-2" src="/img/flor2.webp" alt="iimg-fondo" />
       </div>
 
-      {/* REPRODUCTOR */}
+      
 
       <Modal
         isOpen={modalIsOpen}
@@ -97,16 +108,6 @@ const Invitacion = () => {
       {
         play && (
          <>
-            <div className="reproductor">
-            <ReactAudioPlayer 
-              className="reproductor" 
-              src={song} 
-              autoPlay={true}
-              preload="auto"
-              controls/>
-            </div> 
-      
-      
             <Header />
 
             <div id="datosSection" className="datos">
@@ -154,6 +155,29 @@ const Invitacion = () => {
 
             
             <Hoteles />
+
+            {/* R E P R O D U C T O R   */}
+            <div className="reproductor">
+              <ReactAudioPlayer
+                src={song} 
+                autoPlay={true}
+                preload="auto"
+                />
+              
+                <button
+                  className={`reproductor-boton ${!isPlaying ? 'push' : ''}`} 
+                  onClick={handlePauseRepro}>
+                  <img src="./img/icons/pausa.svg" alt="icon-pause" />
+                </button>
+
+                <button 
+                  className={`reproductor-boton ${isPlaying ? 'push' : ''}`} 
+                  onClick={handlePlayRepro}>
+                  <img src="./img/icons/play.svg" alt="icon-play" />
+                </button>
+              
+              
+            </div>
             
 
 

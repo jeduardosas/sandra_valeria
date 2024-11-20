@@ -1,6 +1,21 @@
 /*R E P R O D U C T O R */
-.reproductor audio{
-  width: 150px;
+.reproductor{
+  padding: 10px;
+  margin: 100px auto 0 auto;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  box-shadow: 5px 5px 10px var(--grisSombra);
+  border-radius: 10px;
+  width: 40%;
+}
+.reproductor-boton{
+  background-color:transparent;
+  cursor:pointer;
+  border-radius: 5px;
+}
+.push{
+  box-shadow: inset 0 .5px 4px #424141;
 }
 
 /*I M A G E N E S   D E   F O N D O */
@@ -32,10 +47,11 @@
 }
 
 .header-image img{
-  width: 400px;
+  max-width: 100%;
 }
 .frase{
   margin: 20px 0 35px 0 ;
+  width: 80%;
   
 }
 
@@ -106,12 +122,14 @@
   color:var(--color_detalles)
 }
 .datos-fecha_div{
+  margin-top: 20px;
   display: flex;
+  justify-content: center;
   
 }
 .datos-fecha_div p{
   display: block;
-  font-size: 38px;
+  font-size: 30px;
   border-right: var(--color_principal) solid;
   padding: 0 10px;
   text-transform: uppercase;
@@ -163,7 +181,7 @@
   width: 60px;
 }
 
-.ubicaciones-title h3{
+.ubicaciones-title h3{ 
   font-family: var(--cursiva);
   font-size: 50px;
   font-weight: bold;
@@ -179,7 +197,7 @@
 }
 .ubicaciones-card_card{
   width: 93%;
-  background-color: #fff;
+  background-color: #f1ede6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,7 +315,7 @@
 }
 .confirmar-card{
   margin-top: 20px;
-  background-color: #fff;
+  background-color: #f1ede6;
   padding: 30px;
   border-radius: 10px;
 

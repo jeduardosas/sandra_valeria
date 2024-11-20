@@ -5,7 +5,7 @@ import 'react-image-gallery/styles/css/image-gallery.css'
 const Slider = () => {
   const images = [];
 
-  getArray(8, images);
+  getArray(11, images);
 
   return(
     <div style={{width:'95vw',margin:'auto'}}>

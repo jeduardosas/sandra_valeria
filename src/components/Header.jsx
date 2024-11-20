@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <header className="header centrar">
           <div className="header-image">
-            <img loading="lazy"  src='/img/kamila.png' alt="img_kamila" />
+            <img loading="lazy"  src='/img/header.webp' alt="img_kamila" />
           </div>
       </header>
         <div className="frase">

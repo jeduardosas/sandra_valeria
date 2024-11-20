@@ -9,7 +9,7 @@ const Regalos = () => {
   const barraContentVisible = useScrollVisible('barraContent')
   return (
     <div className='regalos'>
-      <h2 className='regalos-title'>¿No sabes qué Regalarme?</h2>
+      <h2 className='regalos-title'>Lluvia de Sobres</h2>
       <div className="regalos-cards">
         <div id='barraContent' className={`regalos-card sombra ${barraContentVisible && 'animate__animated animate__zoomIn'}`}>
           <div style={{marginBottom:'20px'}}  className='regalos-card-content regalo-card-sobre'>
